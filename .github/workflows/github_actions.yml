@@ -1,7 +1,5 @@
 name: sample-workflow-2
 on:
-  push:
-    branches: [main]
   schedule:
     # UTCで5分間隔で実行
     - cron: '*/5 * * * *'  # 分 時 日 月 曜日
@@ -12,4 +10,4 @@ jobs:
     - name: checks-out your repository under $GITHUB_WORKSPACE
       uses: actions/checkout@v2
     - name: use echo command
-      run: echo "sample-workflow"
+      run: echo "sample-workflow-2"
