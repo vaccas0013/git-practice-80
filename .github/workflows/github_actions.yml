@@ -1,8 +1,8 @@
 name: sample-workflow-2
 on:
   schedule:
-    # UTCで5分間隔で実行
-    - cron: '*/5 * * * *'  # 分 時 日 月 曜日
+    # UTCで1分間隔で実行
+    - cron: '* * * * *'  # 分 時 日 月 曜日
 jobs:
   job1:
     runs-on: self-hosted
